@@ -19,7 +19,6 @@ export default function SubmissionForm() {
                         Language: <select name="lang">
                             <option value="C">C</option>
                             <option value="C++">C++</option>
-                            <option value="Java">Java</option>
                             <option value="Python">Python</option>
                         </select>
                         Need Input: <input type="radio" name="inputRadio" value="true" />yes

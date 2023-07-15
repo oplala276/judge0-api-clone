@@ -7,14 +7,13 @@ var option = { stats: true };
 compiler.init(option);
 
 var app = express();
-// app.use(bodyParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors())
-app.use(function (req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-});
+// app.use(function (req, res, next) {
+//     res.header("Access-Control-Allow-Origin", "*");
+//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//     next();
+// });
 
 app.get("/", function (req, res) {
     res.sendFile(__dirname, "index.html");
