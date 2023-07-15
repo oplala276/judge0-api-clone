@@ -5,7 +5,7 @@ import image from "./judge0_icon.png"
 export default function SubmissionForm() {
     return (
         <div className='container1'>
-            <form id="myform" name="myform" method="post" action="https://apijudge.onrender.com">
+            <form id="myform" name="myform" method="post" action="https://apijudge.onrender.com/compilecode">
                 <div className="header">
                     <div id="headingtop">
                         <h2>Judge0</h2>
